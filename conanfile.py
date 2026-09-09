@@ -27,3 +27,4 @@ class RayViewsConan(ConanFile):
     def requirements(self):
         self.requires("ray/[~1]", transitive_headers=True)
         self.requires("wxpex/[>=1.0 <2]", transitive_headers=True)
+        self.requires("draw/[~0.3]", transitive_headers=True)

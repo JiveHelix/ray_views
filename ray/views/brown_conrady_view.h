@@ -16,12 +16,12 @@ namespace views
 {
 
 
-class DistortionView: public wxpex::StaticBox
+class BrownConradyView: public wxpex::StaticBox
 {
 public:
     using LayoutOptions = wxpex::LayoutOptions;
 
-    DistortionView(
+    BrownConradyView(
         wxWindow *parent,
         const std::string &name,
         const ray::distortion::BrownConradyControl<double> &control,

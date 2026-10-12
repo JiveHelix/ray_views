@@ -3,7 +3,7 @@ from conan import ConanFile
 
 class RayViewsConan(ConanFile):
     name = "ray_views"
-    version = "1.0.0"
+    version = "1.1.0"
 
     python_requires = "boiler/0.2"
     python_requires_extend = "boiler.LibraryConanFile"
@@ -26,5 +26,5 @@ class RayViewsConan(ConanFile):
 
     def requirements(self):
         self.requires("ray/[~1]", transitive_headers=True)
-        self.requires("wxpex/[>=1.0 <2]", transitive_headers=True)
-        self.requires("draw/[~0.4]", transitive_headers=True)
+        self.requires("wxpex/[>=1.1 <2]", transitive_headers=True)
+        self.requires("draw/[~0.5]", transitive_headers=True)
